@@ -1,0 +1,84 @@
+:root {
+    --background-color: rgb(40, 44, 52, 0.9);
+    --text-color: #DCDFE4;
+    --arrow-color: #859900;
+    --username-color: #B58900;
+    --logo-color: #CB4B16;
+    --folder-color: #268BD2;
+
+    --font-size: 16px;
+}
+
+html, body {
+    background-image: url("wallpaper.jpg");
+    font-family: "Roboto Mono";
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+a, li {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+input {
+    color: var(--text-color);
+    font-size: var(--font-size);
+    background-color: transparent;
+    font-family: "Roboto Mono";
+    width: 33rem;
+    outline: none; border: none;
+}
+
+username { color: var(--arrow-color); }
+folder { color: var(--folder-color); }
+logo { color: var(--logo-color); }
+
+::selection {
+    color: var(--background-color);
+    background: var(--text-color);
+}
+
+username::selection {
+    color: var(--background-color);
+    background: var(--arrow-color);
+}
+
+folder::selection {
+    color: var(--background-color);
+    background: var(--folder-color);
+}
+
+logo::selection {
+    color: var(--background-color);
+    background: var(--logo-color);
+}
+
+.terminal {
+    background-color: var(--background-color);
+    position: absolute;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    top: 40px; left: 40px;
+
+    border-radius: 8px;
+}
+
+.content {
+    position: absolute;
+    left: 20px;
+}
+
+.bookmarks {
+    display: flex;
+    justify-content: left;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    padding-right: 20px;
+}

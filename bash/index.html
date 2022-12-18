@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>startpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="terminal">
+        <div class="content">
+            <p><username>anna@madeline</username>:<folder>~</folder>$ neofetch</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anna@madeline</logo>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>.JJJJJJJ:</logo>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------------
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>.Y5Y5555Y.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OS</logo>: Ubuntu 20.04.5 LTS x86_64
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>:::^Y5Y5J.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Host</logo>: Latitude E6530 01
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>~5YY5?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kernel</logo>: 5.15.0-56-generic
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>^Y5YY5!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time</logo>: <span id="time"></span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>~Y5Y5Y55~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packages</logo>: 2454 (dpkg), 11 (snap)
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>.?5555Y5Y5Y:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shell</logo>: zsh 5.8
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>^J5Y55!^Y5Y5Y.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resolution</logo>: 1920x1080
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>!Y5Y5J^&nbsp;&nbsp;~55Y5J&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WM</logo>: i3
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>.?55557.&nbsp;&nbsp;&nbsp;&nbsp;!5YY57&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Browser</logo>: Firefox
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<logo>^Y5Y5Y~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75YY57!7J7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPU</logo>: Intel i5-3340M (4) @ 3.400GHz
+            <br>&nbsp;&nbsp;&nbsp;<logo>!5555?:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J55555555^&nbsp;&nbsp;&nbsp;&nbsp;GPU</logo>: NVIDIA NVS 5200M
+            <br>&nbsp;&nbsp;<logo>^!!!!~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.JYJ?7~^:.&nbsp;&nbsp;&nbsp;&nbsp;Memory</logo>: 3607MiB / 7852MiB
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<logo>..</logo>
+            <p><username>anna@madeline</username>:<folder>~</folder>$ ls</p>
+            <!--<p><username>anna@madeline</username>:<folder>~</folder>$</p>-->
+            <div class="bookmarks">
+                <div class="links">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox">gmail</a></li>
+                    <li><a href="https://github.com/login">github</a></li>
+                    <li><a href="https://monkeytype.com/login">monkeytype</a></li>
+                    <li><a href="https://todoist.com/app/project/2239909388">todoist</a></li>
+                </div>
+                <div class="links">
+                    <li><a href="https://edt.univ-tlse3.fr/calendar2/cal?vt=month&dt=today&et=student&fid0=22204051">celcat</a></li>
+                    <li><a href="https://moodle.univ-tlse3.fr/">moodle</a></li>
+                    <li><a href="https://synergies.univ-tlse3.fr/#1">zimbrat</a></li>
+                </div>
+                <div class="links">
+                    <li><a href="https://https://discord.com/channels/@me">discord</a></li>
+                    <li><a href="https://youtube.com">youtube</a></li>
+                    <li><a href="https://twitter.com">twitter</a></li>
+                    <li><a href="https://instragram.com">instagram</a></li>
+                </div>
+            </div>
+            <p style="display: inline-block"><username>anna@madeline</username>:<folder>~</folder>$</p>
+                <form style="display: inline-block" method="GET" action="http://www.google.com/search?q=">
+                    <input tabindex="1" name="q"autofocus></input>
+                </form>
+        </div>
+    </div>
+
+    <script>
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    document.getElementById("time").innerHTML = time;
+    </script>
+</body>
